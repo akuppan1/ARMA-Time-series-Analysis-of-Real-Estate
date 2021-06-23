@@ -31,3 +31,33 @@ I then downloaded the rolling data for all 5 boroughs and forecasted the data fo
 I based my zip code recommendations on the value_counts of the sum of these job types in each zip code. I was able to get recommendations for each borough this way. 
 <br></br>
 ### 3. The Data Used and Challenges
+The data used are as follows and are all taken from https://data.cityofnewyork.us/
+<br></br>
+[**NYC Citywide Rolling Calendar Sales**](https://data.cityofnewyork.us/dataset/NYC-Citywide-Rolling-Calendar-Sales/usep-8jbt)
+  - Please note upon writing this project, they updated and merged all the datasets into one giant one called "NYC Citywide Rolling Calendar Sales"
+<br></br>
+[**DOB Permit Issuance**](https://data.cityofnewyork.us/Housing-Development/DOB-Permit-Issuance/ipu4-2q9a)
+<br></br>
+[**Property Valuation and Assessment Data**](https://data.cityofnewyork.us/City-Government/Property-Valuation-and-Assessment-Data/yjxr-fw8i)
+<br></br>
+#### Challenges with the data:
+1. "Property Valuation and Assessment Data" is 2GB in size. I could open it through jupyter notebook at the expense of 100% RAM utilization. If I tried to do anything with the data, the notebook crashed. I could not export any data out of this dataset. For future work, I would require more RAM in a computer or try running the notebook through a cloud VM with sufficient compute power. 
+2. The Rolling Calendar sales datasets had nulls and Nans that had to be dealt with
+3. The column names required to be changed to string type
+4. I had to make qualitative decisions on which columns to keep and what data to ignore
+5. Permit Issuance Data, although smaller, was still a large file and contained 3.75 million rows. I had clean and sort through the data for my recommendations. 
+6. The rolling datasets came in .xls format
+<br></br>
+
+### 4. Cleaning and Prepping the data:
+I had to make the following changes to the rolling datasets:
+| Change | Reason |
+| ----- | ----- |
+|Skip rows when loading .xls file| This allowed for proper loading of the data. There were some rows at the top which pandas was not reading properly.|
+|Take only a couple columns|I chose: 'TAX CLASS AT PRESENT','ZIP CODE', 'RESIDENTIAL UNITS', 'TOTAL UNITS', 'LAND SQUARE FEET', 'GROSS SQUARE FEET', 'YEAR BUILT', 'TAX CLASS AT TIME OF SALE', 'SALE PRICE', 'SALE DATE', because I thought they were the most significant information I can analyze|
+|dropna()|There were nulls and nans in the dataset which I dropped. It was not much|
+|reset_index()| Index had to be reset after dropping rows|
+|Manhattan specific| I chose the bare minimum relevant data because there were ALOT of missing data in the other columns, espescially the square footage column. I chose: 'TAX CLASS AT PRESENT','ZIP CODE', 'YEAR BUILT','SALE PRICE', 'SALE DATE' |
+
+### 5. 
+
