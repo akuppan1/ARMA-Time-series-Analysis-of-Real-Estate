@@ -237,3 +237,23 @@ We see that the model has a decent fit with the test data of the last 30 days. H
 ![LSTM_BRONX](https://user-images.githubusercontent.com/62908910/123032515-0ec07500-d3b4-11eb-8d5d-66404021ee38.PNG)
 #### LSTM STATEN ISLAND FORECAST
 ![LSTM_STATEN_ISLAND](https://user-images.githubusercontent.com/62908910/123032527-11bb6580-d3b4-11eb-951f-6d85abe3d1e2.PNG)
+
+### 8. Permit Data Analysis and decisions
+#### Top Names Analysis
+![Permits_1](https://user-images.githubusercontent.com/62908910/123033465-cace6f80-d3b5-11eb-947e-0f9451e72387.PNG)
+![PERMIT_TOP_NAMES](https://user-images.githubusercontent.com/62908910/123033431-c013da80-d3b5-11eb-9a49-a793898bb92c.PNG)
+![PERMIT_TOP_NAMES_2](https://user-images.githubusercontent.com/62908910/123033436-c2763480-d3b5-11eb-9802-d114d29c9bdc.PNG)
+![PERMIT_TOP_NAMES_3](https://user-images.githubusercontent.com/62908910/123033446-c4d88e80-d3b5-11eb-9053-23e1ed6c8b10.PNG)
+![PERMIT_TOP_NAMES_4](https://user-images.githubusercontent.com/62908910/123033448-c609bb80-d3b5-11eb-922c-76e0243358c7.PNG)
+
+#### Top 10 Zip Codes Per Borough
+### QUEENS
+![TOP_BOROUGHS_QUEENS](https://user-images.githubusercontent.com/62908910/123033734-387a9b80-d3b6-11eb-8443-8da8fa6d6bc6.PNG)
+### MANHATTAN
+![TOP_BOROUGHS_MANHATTAN](https://user-images.githubusercontent.com/62908910/123033740-3b758c00-d3b6-11eb-82d4-4632caed9333.PNG)
+### BRONX
+![TOP_BOROUGHS_BRONX](https://user-images.githubusercontent.com/62908910/123033747-3f091300-d3b6-11eb-8245-a9c56d0e93d8.PNG)
+### BROOKLYN
+![TOP_BOROUGHS_BROOKLYN](https://user-images.githubusercontent.com/62908910/123033759-45978a80-d3b6-11eb-8c9c-15324e6af0ea.PNG)
+### STATEN ISLAND
+![TOP_BOROUGHS_STATEN_ISLAND](https://user-images.githubusercontent.com/62908910/123033764-48927b00-d3b6-11eb-96c5-0512016a7ac7.PNG)
