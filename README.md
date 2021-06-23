@@ -226,4 +226,14 @@ We see that the model has a decent fit with the test data of the last 30 days. H
 #### LinkedIn GreyKite - STATEN ISLAND
 ![GREYKITE_STATEN_ISLAND](https://user-images.githubusercontent.com/62908910/123032026-48dd4700-d3b3-11eb-82ec-b94f4df98b90.PNG)
 
-### 7. 
+### 7. LSTM Forecasting data - all NYC boroughs and observations
+#### LSTM QUEENS FORECAST
+![LSTM_QUEENS](https://user-images.githubusercontent.com/62908910/123032480-023c1c80-d3b4-11eb-9d53-1987a6021ce4.PNG)
+#### LSTM MANHATTAN FORECAST
+![LSTM_MANHATTAN](https://user-images.githubusercontent.com/62908910/123032487-05370d00-d3b4-11eb-8fe4-fcb7fd1adc45.PNG)
+#### LSTM BROOKLYN FORECAST
+![LSTM_BROOKLYN](https://user-images.githubusercontent.com/62908910/123032503-09fbc100-d3b4-11eb-8f29-5839cbd85b58.PNG)
+#### LSTM BRONX FORECAST
+![LSTM_BRONX](https://user-images.githubusercontent.com/62908910/123032515-0ec07500-d3b4-11eb-8d5d-66404021ee38.PNG)
+#### LSTM STATEN ISLAND FORECAST
+![LSTM_STATEN_ISLAND](https://user-images.githubusercontent.com/62908910/123032527-11bb6580-d3b4-11eb-951f-6d85abe3d1e2.PNG)
