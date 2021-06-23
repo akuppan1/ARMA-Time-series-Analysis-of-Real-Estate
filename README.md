@@ -257,3 +257,28 @@ We see that the model has a decent fit with the test data of the last 30 days. H
 ![TOP_BOROUGHS_BROOKLYN](https://user-images.githubusercontent.com/62908910/123033759-45978a80-d3b6-11eb-8c9c-15324e6af0ea.PNG)
 ### STATEN ISLAND
 ![TOP_BOROUGHS_STATEN_ISLAND](https://user-images.githubusercontent.com/62908910/123033764-48927b00-d3b6-11eb-96c5-0512016a7ac7.PNG)
+
+### 9. Observations/Recommendations
+1. We saw that based on the forecasts and plots of the borough datasets, there were some that were trending downward as per the LSTM forecast
+2. ARMA and GreyKite forecasts showed stable prices in the future hovering around the same sale range
+3. Building sales were sporadic in every borough
+4. Staten Island had the least amount of sales
+5. Permit data proved useful in finding out which Job Types were important. A2 was the most prevalent
+6. A1, A2, NB, and DM job types were the ones which will yield higher property values as they are fixes to the property.
+7. DM can potentially be good as it will allow for a new building or removal of an existing building that was bad
+8. I recommend the above 10 zip codes per borough based on total value counts for the 4 main value creating job types
+9. A3 and SG job types are more of supporting job types rather than a main type
+### 10. Future Work
+1) Experiment with different parameters for LSTM and Greykite models
+2) Break down zip codes by focus on only A2 job types or do the same for each job type 
+3) Obtain contractor information for phone calls and interviews for their opinion of the market
+4) Create rolling data scripts that will update and record notebook history as the NYC Open Data website updates
+5) Obtain better hardware to handle much larger datasets
+	1. I can probably get better forecasts
+6) Utilize other data management tools like SQL to increase speed, create workflow pipelines
+7) Try ensemble methods to improve error metrics
+8) Try different LSTM methods - Encoder/Decoder, etc
+9) Feature Engineering with permit data on sufficient hardware
+	1. Correlation matrix/heat map for permit data might reveal more insights
+10) Even the most recent data was limited to the past. Only up to end of April.
+	1. We can webscrape the last month of data with some reputable sites to better have the latest predictions
