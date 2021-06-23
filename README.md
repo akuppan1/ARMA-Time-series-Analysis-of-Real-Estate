@@ -190,30 +190,26 @@ We see that the model has a decent fit with the test data of the last 30 days. H
     4. We can look at the top 10 building permit heavy locations further
 
 
-
-
-
-#### MANHATTAN Line Graph of Data vs 7-day rolling average
-##### Observation
-#### MANHATTAN Statsmodels decomposition   
-##### Observations: 
-#### MANHATTAN Auto-Correlation and Partial Auto-Correlation 
-#### MANHATTAN ARMA forecast
+#### STATEN ISLAND Line Graph of Data vs 7-day rolling average
+![ARMA_STATEN_ISLAND_1](https://user-images.githubusercontent.com/62908910/123031384-39a9c980-d3b2-11eb-8fb6-52057aa31506.PNG)
+#### STATEN ISLAND Statsmodels decomposition
+![ARMA_STATEN_ISLAND_2](https://user-images.githubusercontent.com/62908910/123031395-3d3d5080-d3b2-11eb-884f-be94a22fe52f.PNG)
+#### STATEN ISLAND Inducing Stationarity
+![ARMA_STATEN_ISLAND_3](https://user-images.githubusercontent.com/62908910/123031415-42020480-d3b2-11eb-8df4-c4d116e30116.PNG)
+![ARMA_STATEN_ISLAND_4](https://user-images.githubusercontent.com/62908910/123031421-43cbc800-d3b2-11eb-9426-4b08f241ccc8.PNG)
+#### STATEN ISLAND Auto-Correlation and Partial Auto-Correlation 
+![ARMA_STATEN_ISLAND_5](https://user-images.githubusercontent.com/62908910/123031434-475f4f00-d3b2-11eb-93a9-017995f0fd51.PNG)
+#### STATEN ISLAND ARMA forecast
+![ARMA_STATEN_ISLAND_6](https://user-images.githubusercontent.com/62908910/123031450-4cbc9980-d3b2-11eb-8de9-e17f3fb8369b.PNG)
 #### Error Analysis
-##### Observation:
-#### MANHATTAN Comparing predictions with fresh data from June 2021 dataset (4/1/2021 - 4/31/2021)
-##### Observation
-#### MANHATTAN Observations/Conclusions/Recommendations
-
-
-
-
-
-
-
-
-
-
-
-
-
+![ARMA_STATEN_ISLAND_7](https://user-images.githubusercontent.com/62908910/123031485-580fc500-d3b2-11eb-951a-3a951803f330.PNG)
+#### STATEN ISLAND Comparing predictions with fresh data from June 2021 dataset (4/1/2021 - 4/31/2021)
+![ARMA_STATEN_ISLAND_8](https://user-images.githubusercontent.com/62908910/123031503-5d6d0f80-d3b2-11eb-83aa-eb31ad9e51e3.PNG)
+![ARMA_STATEN_ISLAND_9](https://user-images.githubusercontent.com/62908910/123031518-6231c380-d3b2-11eb-8b0c-823111ae3522.PNG)
+#### STATEN ISLAND Observations/Conclusions/Recommendations
+    1. The point of this analysis was to see if the borough was good to invest in
+    2. Based on the model:
+        - We can enter to buy or exit to sell based on when the market will do well
+    3. The borough sales look predictable
+        - There is predicable fluctuation in Staten Island
+    4. We can look at the top 10 building permit heavy locations further
