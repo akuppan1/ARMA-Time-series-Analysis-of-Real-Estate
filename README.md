@@ -59,5 +59,66 @@ I had to make the following changes to the rolling datasets:
 |reset_index()| Index had to be reset after dropping rows|
 |Manhattan specific| I chose the bare minimum relevant data because there were ALOT of missing data in the other columns, espescially the square footage column. I chose: 'TAX CLASS AT PRESENT','ZIP CODE', 'YEAR BUILT','SALE PRICE', 'SALE DATE' |
 
-### 5. 
+### 5. ARMA Forecasting data - all NYC boroughs and observations
+#### QUEENS Line Graph of Data vs 7-day rolling average
+![image](https://user-images.githubusercontent.com/62908910/123027405-c7ce8180-d3ab-11eb-8947-b1dfd935e741.png)
+##### Observation
+    - The spikes in the data where the price goes to the millions or tens of millions is due to buildings being bought.
+    - Other than that, the rest are residential properties well under a million in price
+#### QUEENS Statsmodels decomposition 
+![image](https://user-images.githubusercontent.com/62908910/123027581-0f550d80-d3ac-11eb-8e20-6aa7ae68fba9.png)
+##### Observations: 
+ - A large amount of sales happened between August 2020 and November 2020. 
+ - Looks like there may be some seasonality every month
+#### QUEENS Auto-Correlation and Partial Auto-Correlation
+![image](https://user-images.githubusercontent.com/62908910/123027746-5d6a1100-d3ac-11eb-93c6-0fb9b0bc8619.png)
+#### QUEENS ARMA forecast
+![image](https://user-images.githubusercontent.com/62908910/123028145-f305a080-d3ac-11eb-8a33-6505d01a249e.png)
+#### Error Analysis 
+1. Length of Predictions :  90
+2. Length of Test data :  90
+3. RMSE :  584288.5171829152
+4. Standard Error :  54947.9592801162
+
+![image](https://user-images.githubusercontent.com/62908910/123028019-ba65c700-d3ac-11eb-9423-aee7721f2fe2.png)
+
+##### Observation:
+RMSE is not too high or low. Lower values of RMSE indicate better fit. I believe this is a good range and model fits well.
+- RMSE is 584288.5171829152
+- Standard error is 54947.9592801162
+#### QUEENS Comparing predictions with fresh data from June 2021 dataset (4/1/2021 - 4/31/2021)
+![image](https://user-images.githubusercontent.com/62908910/123028296-35c77880-d3ad-11eb-8d48-36e440d9b6a3.png)
+![image](https://user-images.githubusercontent.com/62908910/123028422-4ed02980-d3ad-11eb-87ee-a842232e987d.png)
+##### Observation
+We see that the model has a decent fit with the test data of the last 30 days. However, the outlier will affect the error
+
+1. Length of Predictions :  30
+2. Length of Test data :  30
+3. RMSE :  2263584.943411371
+4. Standard Error :  54947.9592801162
+
+![image](https://user-images.githubusercontent.com/62908910/123028597-9bb40000-d3ad-11eb-93f4-d47600d2391f.png)
+
+##### Observation:
+- We see that RMSE is much higher due to a large sale that occured near the end of the month. 
+- Below I remove that outlier and re-check RMSE and Standard error
+
+#### QUEENS Comparing predictions with fresh data - removed outlier
+![image](https://user-images.githubusercontent.com/62908910/123028681-c736ea80-d3ad-11eb-8321-eb3d1c0a3e0f.png)
+
+#### QUEENS Observations/Conclusions/Recommendations
+    1. The point of this analysis was to see if the borough was good to invest in
+    2. Based on the model:
+        - We can enter to buy or exit to sell based on when the market will do well
+    3. The borough sales look predictable
+    4. There are unpredictable building sales which are very large amounts in the millions to tens of millions
+    5. We can look at the top 10 building permit heavy locations further
+
+
+
+
+
+
+
+
 
