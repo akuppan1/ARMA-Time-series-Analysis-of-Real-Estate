@@ -113,6 +113,101 @@ We see that the model has a decent fit with the test data of the last 30 days. H
     3. The borough sales look predictable
     4. There are unpredictable building sales which are very large amounts in the millions to tens of millions
     5. We can look at the top 10 building permit heavy locations further
+#### MANHATTAN Line Graph of Data vs 7-day rolling average
+![image](https://user-images.githubusercontent.com/62908910/123028851-154bee00-d3ae-11eb-82c7-ce5633942244.png)
+##### Observation
+    - The spikes in the data where the price goes to the millions or tens of millions is due to buildings being bought.
+    - Other than that, the rest are residential properties well under a million in price
+#### MANHATTAN Statsmodels decomposition   
+![image](https://user-images.githubusercontent.com/62908910/123028914-36acda00-d3ae-11eb-85ff-b14f2c88b805.png)
+##### Observations: 
+ - A large amount of sales happened between August 2020 and November 2020. 
+ - Looks like there may be some seasonality every month
+#### MANHATTAN Auto-Correlation and Partial Auto-Correlation 
+![image](https://user-images.githubusercontent.com/62908910/123029296-e71ade00-d3ae-11eb-8c72-228c42fc035d.png)
+#### MANHATTAN ARMA forecast
+![image](https://user-images.githubusercontent.com/62908910/123029382-074a9d00-d3af-11eb-99f1-9d48d79b2e79.png)
+#### Error Analysis
+![image](https://user-images.githubusercontent.com/62908910/123029443-1e898a80-d3af-11eb-8db5-f12b5983df95.png)
+#### MANHATTAN Comparing predictions with fresh data from June 2021 dataset (4/1/2021 - 4/31/2021)
+![ARMA_QUEENS_5](https://user-images.githubusercontent.com/62908910/123029553-4f69bf80-d3af-11eb-9853-1cdbd18da592.PNG)
+![ARMA_QUEENS_6](https://user-images.githubusercontent.com/62908910/123029570-5690cd80-d3af-11eb-8f1b-fac5d502e66a.PNG)
+##### Observation
+- We see that the model looks like it fits well versus the test data of 4/1/2021 until 4/31/2021
+- There is a spike in April 2021, probably a building got sold for millions
+    - This will affect our RMSE
+#### MANHATTAN Observations/Conclusions/Recommendations
+    1. The point of this analysis was to see if the borough was good to invest in
+    2. Based on the model:
+        - We can enter to buy or exit to sell based on when the market will do well
+    3. The borough sales look predictable
+        - Espescially for Manhattan, there is a predictable fluctuation
+    4. There are unpredictable building sales which are very large amounts in the millions to tens of millions
+    5. We can look at the top 10 building permit heavy locations further
+
+#### BRONX Line Graph of Data vs 7-day rolling average
+![ARMA_BRONX_1](https://user-images.githubusercontent.com/62908910/123030024-17af4780-d3b0-11eb-9711-fdf104efcdb5.PNG)
+#### BRONX Statsmodels decomposition 
+![ARMA_BRONX_2](https://user-images.githubusercontent.com/62908910/123030050-2269dc80-d3b0-11eb-873c-bda8e8ebf5d5.PNG)
+#### BRONX Auto-Correlation and Partial Auto-Correlation 
+![ARMA_BRONX_3](https://user-images.githubusercontent.com/62908910/123030067-2990ea80-d3b0-11eb-8a7f-7d8a3ebaffa1.PNG)
+#### BRONX ARMA forecast
+![ARMA_BRONX_4](https://user-images.githubusercontent.com/62908910/123030082-2f86cb80-d3b0-11eb-9950-9b8f19f4ad75.PNG)
+#### Error Analysis
+![ARMA_BRONX_5](https://user-images.githubusercontent.com/62908910/123030092-344b7f80-d3b0-11eb-837e-b16660df603f.PNG)
+#### BRONX Comparing predictions with fresh data from June 2021 dataset (4/1/2021 - 4/31/2021)
+![ARMA_BRONX_6](https://user-images.githubusercontent.com/62908910/123030111-3ca3ba80-d3b0-11eb-8f83-bada57ac9cab.PNG)
+![ARMA_BRONX_7](https://user-images.githubusercontent.com/62908910/123030128-43cac880-d3b0-11eb-8127-609f093e1796.PNG)
+#### BRONX Observations/Conclusions/Recommendations
+    1. The point of this analysis was to see if the borough was good to invest in
+    2. Based on the model:
+        - We can enter to buy or exit to sell based on when the market will do well
+    3. The borough sales look predictable
+        - There is predicable fluctuation in Bronx
+    4. There are unpredictable building sales which are very large amounts in the millions to tens of millions
+    5. We can look at the top 10 building permit heavy locations further
+    
+#### BROOKLYN Line Graph of Data vs 7-day rolling average
+![ARMA_BROOKLYN_1](https://user-images.githubusercontent.com/62908910/123030584-06b30600-d3b1-11eb-9416-06d7b033f0f2.PNG)
+#### BROOKLYN Statsmodels decomposition 
+![ARMA_BROOKLYN_2](https://user-images.githubusercontent.com/62908910/123030597-0a468d00-d3b1-11eb-9b54-171b89366add.PNG)
+#### BROOKLYN Auto-Correlation and Partial Auto-Correlation 
+![ARMA_BROOKLYN_3](https://user-images.githubusercontent.com/62908910/123030605-0e72aa80-d3b1-11eb-9e9d-10396ab7c9a2.PNG)
+#### BROOKLYN ARMA forecast
+![ARMA_BROOKLYN_4](https://user-images.githubusercontent.com/62908910/123030622-13375e80-d3b1-11eb-8af8-27200f25e3d3.PNG)
+#### Error Analysis
+![ARMA_BROOKLYN_5](https://user-images.githubusercontent.com/62908910/123030633-17637c00-d3b1-11eb-89fc-bf87f949784e.PNG)
+#### BROOKLYN Comparing predictions with fresh data from June 2021 dataset (4/1/2021 - 4/31/2021)
+![ARMA_BROOKLYN_6](https://user-images.githubusercontent.com/62908910/123030646-1af70300-d3b1-11eb-81e7-aeaa69c8efb8.PNG)
+![ARMA_BROOKLYN_7](https://user-images.githubusercontent.com/62908910/123030650-1cc0c680-d3b1-11eb-93a3-233439574798.PNG)
+![ARMA_BROOKLYN_8](https://user-images.githubusercontent.com/62908910/123030663-20ece400-d3b1-11eb-9735-3a7602f5b6e4.PNG)
+#### BROOKLYN Observations/Conclusions/Recommendations
+    1. The point of this analysis was to see if the borough was good to invest in
+    2. Based on the model:
+        - We can enter to buy or exit to sell based on when the market will do well
+    3. The borough sales look predictable
+        - There is predicable fluctuation in Brooklyn
+    4. We can look at the top 10 building permit heavy locations further
+
+
+
+
+
+#### MANHATTAN Line Graph of Data vs 7-day rolling average
+##### Observation
+#### MANHATTAN Statsmodels decomposition   
+##### Observations: 
+#### MANHATTAN Auto-Correlation and Partial Auto-Correlation 
+#### MANHATTAN ARMA forecast
+#### Error Analysis
+##### Observation:
+#### MANHATTAN Comparing predictions with fresh data from June 2021 dataset (4/1/2021 - 4/31/2021)
+##### Observation
+#### MANHATTAN Observations/Conclusions/Recommendations
+
+
+
+
 
 
 
