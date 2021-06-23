@@ -8,7 +8,7 @@ from: https://lp-cms-production.imgix.net/2021-05/GettyRF_494607942.jpg?auto=for
 3. The Data used and Challenges with it
 4. Cleaning and Prepping the Data
 5. ARMA Forecasting data - all NYC boroughs and observations
-6. LinkedIn GreyKite forecasating of data - all NYC boroughs and observations
+6. LinkedIn GreyKite forecasting of data - all NYC boroughs and observations
 7. LSTM Forecasting data - all NYC boroughs and observations
 8. Permit Data Analysis and decisions
 9. Observations/Recommendations
@@ -213,3 +213,17 @@ We see that the model has a decent fit with the test data of the last 30 days. H
     3. The borough sales look predictable
         - There is predicable fluctuation in Staten Island
     4. We can look at the top 10 building permit heavy locations further
+
+### 6. LinkedIn GreyKite forecasting of data - all NYC boroughs and observations
+#### LinkedIn GreyKite - QUEENS
+![GREYKITE_QUEENS](https://user-images.githubusercontent.com/62908910/123031739-c81e4b00-d3b2-11eb-916d-3e1989126da9.PNG)
+#### LinkedIn GreyKite - MANHATTAN
+![GREYKITE_MANHATTAN](https://user-images.githubusercontent.com/62908910/123031796-e4ba8300-d3b2-11eb-9a5a-7a3119d902a4.PNG)
+#### LinkedIn GreyKite - BROOKLYN
+![GREYKITE_BROOKLYN](https://user-images.githubusercontent.com/62908910/123031855-04ea4200-d3b3-11eb-8107-c2f059c4511b.PNG)
+#### LinkedIn GreyKite - BRONX
+![GREYKITE_BRONX](https://user-images.githubusercontent.com/62908910/123031948-2a774b80-d3b3-11eb-8ffc-dc3b9d752459.PNG)
+#### LinkedIn GreyKite - STATEN ISLAND
+![GREYKITE_STATEN_ISLAND](https://user-images.githubusercontent.com/62908910/123032026-48dd4700-d3b3-11eb-82ec-b94f4df98b90.PNG)
+
+### 7. 
